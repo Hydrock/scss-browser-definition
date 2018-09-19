@@ -9,8 +9,13 @@
         /* WebKit hack: */
         .webkit:not(*:root) {
             color: red;
+            background-color: #999;
+        }
+        .webkit:not(*:root)::after {
+            content: 'webkit'
         }
 
+/* safary */
 @media not all and (min-resolution:.001dpcm) { 
     @media {
         .safari { 
@@ -20,10 +25,30 @@
     }
 }
 
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari::after {
+            content: 'safari'!important
+        }
+    }
+}
+
+/* Firefox */
+@media screen and (min--moz-device-pixel-ratio:0) {
+    .firefox {
+        color: orange;
+        background-color: #999;
+    }
+    .firefox::after {
+            content: 'firefox'
+        }
+}
+
+
     </style>
 </head>
 <body>
-    <p class="webkit safari">
+    <p class="webkit safari firefox">
         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Взобравшись рукопись все за лучше дорогу жаренные вдали образ знаках сбить? Использовало последний рукописи большой ipsum образ дорогу вершину пояс.
     </p>
 </body>
