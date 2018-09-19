@@ -7,19 +7,23 @@
     <title>Document</title>
     <style>
         /* WebKit hack: */
-        .selector:not(*:root) {}
-        /* Google Chrome:All the versions
-        Safari:All the versions
-        Opera :14 and Later
-        Android:All the versions */
-
-        .webkit {
+        .webkit:not(*:root) {
             color: red;
         }
+
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari { 
+            color:#0000FF!important; 
+            background-color:#CCCC99; 
+        }
+    }
+}
+
     </style>
 </head>
 <body>
-    <p class="webkit">
+    <p class="webkit safari">
         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Взобравшись рукопись все за лучше дорогу жаренные вдали образ знаках сбить? Использовало последний рукописи большой ipsum образ дорогу вершину пояс.
     </p>
 </body>
