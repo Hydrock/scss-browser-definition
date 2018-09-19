@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* WebKit hack: */
+        .webkit:not(*:root) {
+            color: red;
+            background-color: #999;
+        }
+        .webkit:not(*:root)::after {
+            content: 'webkit'
+        }
+
+/* safary */
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari { 
+            color:#0000FF!important; 
+            background-color:#CCCC99; 
+        }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .safari::after {
+            content: 'safari'!important
+        }
+    }
+}
+
+/* Firefox */
+@media screen and (min--moz-device-pixel-ratio:0) {
+    .firefox {
+        color: orange;
+        background-color: #999;
+    }
+    .firefox::after {
+            content: 'firefox'
+        }
+}
+
+
+    </style>
+</head>
+<body>
+    <p class="webkit safari firefox">
+        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Взобравшись рукопись все за лучше дорогу жаренные вдали образ знаках сбить? Использовало последний рукописи большой ipsum образ дорогу вершину пояс.
+    </p>
+</body>
+</html>
