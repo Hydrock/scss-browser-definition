@@ -1,0 +1,26 @@
+{
+  "name": "scss-browser-definition",
+  "version": "1.0.0",
+  "description": "scss browser definition mixins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./src/server.js",
+    "build": "node ./src/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hydrock/scss-browser-definition.git"
+  },
+  "author": "Hydrock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hydrock/scss-browser-definition/issues"
+  },
+  "homepage": "https://github.com/Hydrock/scss-browser-definition#readme",
+  "devDependencies": {
+    "fs-copy-file": "^2.1.2",
+    "http": "0.0.0",
+    "local-web-server": "^2.6.0"
+  }
+}
